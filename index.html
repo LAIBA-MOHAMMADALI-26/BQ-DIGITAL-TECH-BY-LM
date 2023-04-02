@@ -1,0 +1,545 @@
+b<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital Tech</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<!-- aos links -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="index.css">
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@600&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+#p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  font-size: 2rem;
+}
+ .contain{
+  font-family:'Roboto';
+  background-color:black;  
+  color: #e5e5e5;
+  font-size: 2rem;
+  text-transform: uppercase;
+  height: 80vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.animation {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 2rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 4s infinite;
+}
+
+.first div {
+  background-color: #20a7d8;
+}
+
+.second div {
+  background-color: #CD921E;
+}
+
+.third div {
+  background-color: #c10528;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0rem;
+  }
+  10% {
+    margin-top: -1rem;
+  }
+  20% {
+    margin-top: -2rem;
+  }
+  30% {
+    margin-top: -3rem;
+  }
+  40% {
+    margin-top: -4rem;
+  }
+  50% {
+    margin-top: -5rem;
+  }
+  60% {
+    margin-top: -6rem;
+  }
+  70% {
+    margin-top: -5rem;
+  }
+  80% {
+    margin-top: -4rem;
+  }
+  90% {
+    margin-top: -3rem;
+  }
+  100% {
+    margin-top: 0rem;
+  }
+} 
+
+
+
+h1{
+  animation: 4s anim-popoutin ease infinite;
+}
+.para{
+  font-style: italic;
+  /* font-size: 2rem; */
+}
+
+/*  */
+
+body{
+  font-family: 'Roboto';
+
+  /* background-color:black; */
+  background-color:#0A2647;
+}
+*{
+  margin:0PX;
+  padding: 0px;
+}
+
+.nav-link {
+  font-weight: bold;
+  /* font-size: 14px; */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #031D44;
+  padding: 10px 0px;
+  margin: 0px 10px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+   
+
+  <nav id="myNavbar" class=" navbar fixed-top navbar-expand-lg  text-dark" style="background-color: #408dd0;">
+        <div class=" container-fluid">
+          <!-- <img src="LOGO.png"  alt="Logo" width="60" height="60" class=" d-inline-block align-text-top" > -->
+                <span class=" badge bg-dark mx-2 fs-2" >DIGITAL TECH</span>
+          <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=" navbar-toggler-icon"></span>
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+              <li class=" nav-item">
+                <a class="nav-link nav-link-ltr nav-link active" onclick="closeNavbar()" aria-current="page" href="#"><b>  HOME</b>
+                  </a>
+              </li>
+              <li class=" nav-item">
+                <a class="nav-link nav-link-ltr nav-link active" onclick="closeNavbar()" aria-current="page" href="#skills"><b>TECHNOLOGIES</b>
+                  </a>
+              </li>
+              <li class=" nav-item">
+                <a class="nav-link nav-link-ltr nav-link active" onclick="closeNavbar()" href="contact.html"><b> CONTACT US</b>
+                </a>
+              </li>
+              <li class=" nav-item">
+                <a class="nav-link nav-link-ltr nav-link active" onclick="closeNavbar()" onclick="closeNavbar()"  href="#about"><b>ABOUT</b>
+                   </a>
+              </li>
+              <li class=" nav-item dropdown">
+                <a class=" nav-link nav-link-ltr nav-link dropdown-toggle"  href="#projects" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>PROJECTS</b>    
+                </a>
+                <ul class=" dropdown-menu" >
+                <li><a class=" dropdown-item" onclick="closeNavbar()" href="#projects">C++</a></li>
+                  <li><a class=" dropdown-item" onclick="closeNavbar()" href="#projects">Python</a></li>
+                  <li><hr class=" dropdown-divider"></li>
+                  <li><a class=" dropdown-item" onclick="closeNavbar()" href="#projects">web development</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class=" d-flex" role="search">
+              <input class=" form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class=" btn btn-outline-success bg-dark text-light" type="submit"><b>   Search</b>
+             </button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+     
+<!-- nav ends -->
+
+
+<!-- about section  -->
+<!-- ...................................start...............  -->
+
+<div class="container-fluid my-5" >
+  <div class="card mb-3 text-light"style="background-color: #0A2647;font-family: 'Roboto';" >
+      <div class="row g-0">
+        <div class="col-md-3 my-3">
+          <img src="LOGO.png" class="img-thumbnail rounded-circle"  alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p id="p" class="md-mt-3 mt-5 animate__animated animate__bounce text-center">Hello 👋 I'm</p>
+    <section class="animation mt-md-0 text-center">
+      <div class="first"><div>DIGITAL TECH</div></div>
+      <div class="second"><div>Web Development Industry</div></div>
+      <div class="third"><div> By Laiba Mohammad Ali</div></div>
+      
+    </section>
+  </h5>
+
+    <p class=" card-text animate__backInUp text-center para mx-md-3 mx-0 animate__animated">Our goal is to make sure that each website we design has the potential to soar to the top.
+
+      We know that SEO and marketing are the driving force behind a website's success, so we make sure to give our best in all these areas.
+      
+      We don't just design websites, we craft digital masterpieces that are built to perform.</p>
+
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- skills section  -->
+<section id="skills" class="container-fluid my-4image.png" style="font-family: 'Fasthand', cursive;" >
+    <h1 class=" text-center text-light" style="font-family:'Roboto';background-color:#2C74B3;">TECHNOLOGIES</h1>
+    <div class=" container text-center " style="background-color:#0A2647">
+        <div data-aos="fade-up" class=" alert alert-primary"  >
+          <b style="font-family:'Roboto';" >FRONTEND TECHNOLOGIES</b>
+          </div>
+        <div data-aos="fade-down" class=" row  container gx-0 my-3 py-3 justify-content-center">
+          <div class=" col-md-3 border border-black py-2 text-dark  rounded-pill"  style="background-color:#98DFD6 ;"><img  src="html icon.png" width="40px" height="40px" alt=""><b>HTML</b> </div>
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill" style="background-color: #98DFD6;" ><img src="css icon.png"width="40px" height="40px"  alt=""><b> CSS</b></div>
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill"  style="background-color: #98DFD6;"><img src="reactlogo.png"width="40px" height="40px"  alt=""><b>REACT</b> </div>
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill"  style="background-color: #98DFD6;" ><img src="JS.jpg"width="40px" height="40px"  alt=""><b>JAVASCRIPT</b> </div>
+        
+        </div>
+        <div data-aos="fade-up" class=" alert alert-primary" >
+          <b style="font-family:'Roboto';" >BACKEND TECHNOLOGIES</b>
+               </B>
+          </div>
+        <div data-aos="fade-down" class=" row  container gx-0 my-3 py-3 justify-content-center">
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill" style="background-color: #98DFD6;" ><img src="PYTHON.avif"width="40px" height="40px"  alt=""><b>PYTHON</b> </div>
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill" style="background-color: #98DFD6;" ><img src="C.png"width="40px" height="40px"  alt=""><b>C++</b></div>
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill" style="background-color: #98DFD6;" ><img src="SQL.png"width="40px" height="40px"  alt=""><b>SQL</b></div>
+          <div class=" col-md-3  border border-black py-2 text-dark  rounded-pill" style="background-color: #98DFD6;"  ><img src="PHP.png"width="40px" height="40px"  alt=""><b>PHP</b></div>
+        </div>
+</section>
+
+<!-- skils sections ends  -->
+
+<!-- .....  -->
+<!-- projects section starts  -->
+<section class="py-5 container-fluid" id="projects" 
+
+>
+  <h1 class="text-light text-center container-fluid" style="font-family:'Roboto';background-color:#2C74B3;">PROJECTS</h1>
+  <div class="d-flex container-fluid align-items-center  mx-auto  col-md-7 col-lg-6 col-sm-2">
+
+ 
+  <button  data-aos="flip-down" class="btn  text-dark mx-3 " type="button" data-bs-toggle="offcanvas" style="background-color: #98DFD6;" data-bs-target="#offcanvasScrolling"style="font-family:'Roboto';" aria-controls="offcanvasScrolling"> <b>View WebDevelopment Projects</b> </button>
+  <button  data-aos="flip-down" class="btn  text-dark mx-3" type="button" data-bs-toggle="offcanvas"  style="background-color: #98DFD6;" data-bs-target="#offcanvasRight"style="font-family:'Roboto';" aria-controls="offcanvasRight"><b>View Python and C++ projects</b></button>
+<div class="offcanvas offcanvas-start " style="background-color:#031D44" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header ">
+    <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">WEB DEVELOPMENT PROJECT LINKS</h5>
+<br>
+   
+
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p> <h2 class="text-center"><a href="https://laiba-mohammadali-26.github.io/car-rental/">CAR RENTAL</a>
+      <P class="text-light">A car rental Website where buyers & sellers can rent their car.
+      </P> </h2>
+      
+      <br>
+      <h2 class="text-center"><a href="https://laibamohammadali.netlify.app/">PORTFOLIO</a>
+        <P class="text-light">My portfolio giving all the details</P>
+      </h2>
+      <br>
+      <h2 class="text-center"><a href="https://edutreasure.netlify.app/">EDU TREASURES</a>
+        <p class="text-light">An Education Website that facilitates students.</p>
+      </h2>
+      <br>
+      <h2 class="text-center"><a href="https://analyzeryourtext.netlify.app/">TEXT ANALYZER</a>
+        <P class="text-light">A website used to analyze the details of the text entered.</P>
+      </h2>
+      <br>
+      <h2 class="text-center"><a href="https://coding-world-ol.netlify.app/index.html">CODING WORLD</a>
+        <P class="text-light">A website to render coding services</P>
+      </h2></p>
+  </div>
+</div>
+</div>
+
+
+
+<div data-aos="flip-up" class="offcanvas offcanvas-end "style="background-color:rgb(4, 4, 38)" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div  data-aos="flip-down" class="offcanvas-header">
+    <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">C++ & PYTHON PROJECT LINKS</h5>
+    <br>
+  </div>
+  <p > <h2  data-aos="flip-down" class="text-center"><a href="https://github.com/LAIBA-MOHAMMADALI-26/student--management--system">Student Management System</a>
+  <p class="text-light">A system made using python which helps to coordinate scheduling and communications between faculty regarding students.</p></h2>
+    <br>
+    <h2  data-aos="flip-down" class="text-center"><a href="https://github.com/LAIBA-MOHAMMADALI-26/dress-shop-management-system">Dress Shop Management System</a>
+    <p class="text-light">A system made using C++ to  help individuals or businesses manage their clothing inventory more efficiently. </p></h2></p>
+  <div class="offcanvas-body">
+    
+  </div>
+</div>
+
+<div data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="5000" class="container-fluid  my-3">
+  <div  id="carouselExampleDark" class="carousel carousel-dark slide ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Capture.PNG"  width="350px" height="550px" class=" img-thumbnail  d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block text-light">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="A platform on which buyers and sellers can rent their cars">Car Rental Website</button>
+            
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="myportal.PNG" width="350px" height="550px" class=" img-thumbnail d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Portal Link</button>
+        
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="student.png" width="350px" height="550px" class=" img-thumbnail d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-lg btn-warning" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Student Management System</button>
+        
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="clothes.webp" width="350px" height="550px" class=" img-thumbnail d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <button type="button" class="btn btn-lg btn-info" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dress Shop Management System</button>
+     
+      </div>
+  </div>
+      <div class="carousel-item">
+        <img src="edutreasures.PNG" width="350px" height="550px" class=" img-thumbnail d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Edu Treasures</button>
+          
+        </div>
+        
+          
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="text.PNG" class=" img-thumbnail d-block w-100" width="350px" height="550px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Text Anlyzer</button>
+          
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="coding.jpg" class=" img-thumbnail d-block w-100" width="350px" height="550px" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Coding World</button>
+         
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- .....project section ends  -->
+
+
+      <!-- footer -->
+      <footer data-aos="fade-up" class=" text-white text-center w-100 text-lg-start"
+      style="background-color: #23242a;">
+      
+      <div data-aos="fade-up" class=" container p-4">
+       
+        <div data-aos="fade-down" class=" row mt-4">
+         
+          <div data-aos="fade-up" class=" col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class=" text-uppercase mb-4">About Digital Tech</h5>
+
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium
+              voluptatum deleniti atque corrupti.
+            </p>
+
+            <p>
+              Blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas
+              molestias.
+            </p>
+            <!-- Add icon library -->
+            <div data-aos="fade-down" class=" alert alert-primary fw-bold d-flex
+              justify-content-center align-items-center my-4" role="alert" style="background-color: #98DFD6;">
+              <h1 >Contact Us</h1>
+            </div>
+            
+
+            <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!-- Add font awesome icons -->
+            <a  href="https://www.facebook.com/edutreasure26" class=" fa fa-facebook"></a>
+            <a  href=" https://github.com/LAIBA-MOHAMMADALI-26" class=" fa fa-github"></a>
+            <a  href="https://www.instagram.com/laiba_m.ali26/" class=" fa fa-instagram"></a>
+            <a  href="https://www.linkedin.com/in/laiba-mohammadali-94139824a/" class=" fa fa-linkedin"></a>
+
+          </div>
+          
+          <div data-aos="fade-down" class=" col-lg-4 col-md-6 mb-4 mb-md-0">
+           
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class=" form-outline form-white mb-4">
+              
+              <div class=" form-notch"><div class=" form-notch-leading"
+                  style="width: 9px;"></div><div class=" form-notch-middle"
+                  style="width: 48.8px;"></div><div
+                  class=" form-notch-trailing"></div></div></div>
+
+            <ul class=" fa-ul" style="margin-left: 1.65em;">
+              <li class=" mb-3">
+                <span class=" fa-li"><i class=" fas fa-home"></i></span><span
+                  class=" ms-2">Karachi,Pakistan</span>
+              </li>
+              
+              <li class=" mb-3">
+                <span class=" fa-li"><i class=" fas fa-phone"></i></span><span
+                  class=" ms-2">03212332364</span>
+              </li>
+              <li class=" mb-3">
+                <span class=" fa-li"><i class=" fas fa-print"></i></span><span
+                  class=" ms-2">03212332364</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div data-aos="fade-down" class=" col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class=" text-uppercase mb-4">Opening hours</h5>
+
+            <table class=" table text-center text-white">
+              <tbody class=" font-weight-normal">
+                <tr>
+                  <td>Mon - Thu:</td>
+                  <td>8am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat:</td>
+                  <td>8am - 1am</td>
+                </tr>
+                <tr>
+                  <td>Sunday:</td>
+                  <td>9am - 10pm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+       
+        </div>
+        
+      </div>
+ </footer>
+
+ <!-- Required Bootstrap JavaScript files -->
+
+
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+ <script>
+function closeNavbar() {
+  var navbarToggler = document.querySelector(".navbar-toggler");
+  if (navbarToggler.getAttribute("aria-expanded") === "true") {
+    navbarToggler.click();
+  }
+}
+    AOS.init();
+
+  </script>
+</body>
+</html>
